@@ -3,6 +3,9 @@ Install and Uninstall Flatpaks via Flathubs Install Button.
 I do not often if ever post my applications, so use at your own risk. License: MIT (Subject to Change)
 Electron based Flathub store built into a .AppImage for you.
 
+USE AT YOUR OWN RISK. I AM NOT TO BE HELD RESPONSEIBLE FOR ANY DAMAGES THAT MAY OCCUR DUE TO THE USE OF THIS SOFTWARE. 
+(I imagine it should be fine of course but idk what you are installing... and if you install something bad somehow that's not on me.)
+
 This will allow you to use the flathub store by-itself to install/uninstall flatpackrefs. 
 
 The install button does not change to uninstall once installed. What it does do is attempt to detect the reference via grep and if already installed it will ask if you want to uninstall.
@@ -11,9 +14,6 @@ Therefore if something is already installed the terminal that opens will ask if 
 When you choose to install something it will open a terminal for confirmation of the install/uninstall.
 
 This is at least a step in the direction of flathub as it's own store instead of the site. (I imagine others have already done this but I didn't feel like looking around)
-
-USE AT YOUR OWN RISK. I AM NOT TO BE HELD RESPONSEIBLE FOR ANY DAMAGES THAT MAY OCCUR DUE TO THE USE OF THIS SOFTWARE. 
-(I imagine it should be fine of course but idk what you are installing... and if you install something bad somehow that's not on me.)
 
 Otherwise hopefully this is not too trash for your enjoyment! I am not the best coder just wanted to put this out there for others in case they wanted to use it.
 

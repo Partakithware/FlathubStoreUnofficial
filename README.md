@@ -1,6 +1,6 @@
 # FlathubStoreUnofficial
 Install and Uninstall Flatpaks via Flathubs Install Button.
-I do not often if ever post my applications, so use at your own risk. License is up in the air not sure so I just selected MIT.
+I do not often if ever post my applications, so use at your own risk. License: MIT (Subject to Change)
 Electron based Flathub store built into a .AppImage for you.
 
 This will allow you to use the flathub store by-itself to install/uninstall flatpackrefs. 

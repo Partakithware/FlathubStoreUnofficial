@@ -47,12 +47,16 @@ Anyhow this does not mix stores nor require you to type commands in the terminal
 
 VirusTotal Scan: [1.0.1 Scan](https://www.virustotal.com/gui/file/ce2e35ee15e43cca6bc08cc7a2ea2aa76a4bc2223b5522685a2855d44162e098?nocache=1)
 
+Looking to contribute and make it more appealing and less trash? - Leave a comment :) - https://discourse.flathub.org/t/flathubstoreunofficial/9094
+
 Edit: I will likely push a few more updates. I will slowly attempt to improve what I think may be less/more desired.
 
 Update 1.0.1: Removed file bar in app for appearance and also made terminal auto-close after completed install/uninstall.
 
 Updated my lame source so it can be pulled/pushed, edited and ridiculed.
 This does include some unused files in /src at the time being.
+
+
 
 
 

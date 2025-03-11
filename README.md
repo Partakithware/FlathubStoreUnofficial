@@ -12,7 +12,8 @@ Update 1.0.2: Addresses what used to be listed here which was the fact that when
 
 When you choose to install something it will open a terminal for confirmation of the install/uninstall.
 
-This is at least a step in the direction of flathub as it's own store instead of the site. (I imagine others have already done this but I didn't feel like looking around)
+This is at least a step in the direction of flathub on it's own instead of the using KDE/GNOME Discover/Software. (I imagine others have already done this but I didn't feel like looking around)
+Should cover a broader range of DesktopEnvironments/Distros.
 
 Otherwise hopefully this is not too trash for your enjoyment! I am not the best coder just wanted to put this out there for others in case they wanted to use it.
 

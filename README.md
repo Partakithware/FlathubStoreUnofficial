@@ -8,8 +8,7 @@ USE AT YOUR OWN RISK. I AM NOT TO BE HELD RESPONSEIBLE FOR ANY DAMAGES THAT MAY 
 
 This will allow you to use the flathub store by-itself to install/uninstall flatpackrefs. 
 
-The install button does not change to uninstall once installed. What it does do is attempt to detect the reference via grep and if already installed it will ask if you want to uninstall.
-Therefore if something is already installed the terminal that opens will ask if you want to uninstall it. (Yes I could have not made it open a terminal, which then allows more direct installs but less secure)
+Update 1.0.2: Addresses what used to be listed here which was the fact that when you installed a Flatpak the install text did not change to uninstall, now it does. (experimental) temporary method was placed in that resolves this but not in the best way it could.
 
 When you choose to install something it will open a terminal for confirmation of the install/uninstall.
 

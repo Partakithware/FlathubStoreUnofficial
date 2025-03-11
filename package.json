@@ -37,7 +37,8 @@
       "icon": "build/icon.png"
     },
     "extraResources": [
-      "install_flathub_app.sh"
+      "install_flathub_app.sh",
+      "list_flatpaks.sh"
     ]
   }
 }

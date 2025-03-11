@@ -80,16 +80,10 @@ function modifyInstallButtons(webContents, flatpakList) {
 
                 if (flatpakList.includes(appID)) {
                     button.textContent = 'Uninstall';
-                    button.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        window.electronAPI.uninstallFlatpak(href);
-                    });
+                   
                 } else {
                     button.textContent = 'Install';
-                    button.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        window.electronAPI.installFlatpak(href);
-                    });
+                    
                 }
             });
         })(JSON.parse('${JSON.stringify(flatpakList)}'));

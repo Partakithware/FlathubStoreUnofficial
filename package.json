@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "Partakith",
-  "license": "MIT",
+  "license": "GNU GPLv3",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
   },

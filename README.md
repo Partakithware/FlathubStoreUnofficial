@@ -52,6 +52,7 @@ Edit: I will likely push a few more updates. I will slowly attempt to improve wh
 Update 1.0.1: Removed file bar in app for appearance and also made terminal auto-close after completed install/uninstall.
 
 Updated my lame source so it can be pulled/pushed, edited and ridiculed.
+This does include some unused files in /src at the time being.
 
 
 

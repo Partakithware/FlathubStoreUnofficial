@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+        const contentDiv = document.getElementById('content');
+    
+        document.body.addEventListener('click', (event) => {
+            let target = event.target;
+    
+            while (target != null) {
+                if (target.tagName === 'A' && target.href && target.href.endsWith('.flatpakref')) {
+                    console.log(`Flatpakref link clicked: ${target.href}`);
+                    window.electronAPI.installFlatpak(target.href);
+                    event.preventDefault();
+                    break;
+                }
+                target = target.parentElement;
+            }
+        });
+    
+        window.electronAPI.onInstallResult((event, result) => {
+            if (result.success) {
+                contentDiv.innerHTML = `<p>Installation successful: ${result.message}</p>`;
+            } else {
+                contentDiv.innerHTML = `<p>Installation failed: ${result.message}</p>`;
+            }
+        });
+    </script>
+  </body>
+</html>

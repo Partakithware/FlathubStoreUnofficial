@@ -31,5 +31,4 @@ for app_id in "${unique_app_ids[@]}"; do
   echo "$app_id"
 done
 
-read -p "Press Enter to continue..."
 

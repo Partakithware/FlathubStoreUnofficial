@@ -1,21 +1,35 @@
 #!/bin/bash
-output=$(flatpak list)
-IFS=$'\n' read -rd '' -a lines <<< "$output"
 
-app_ids=()
+# First method: Targeted extraction
+output1=$(flatpak list | sed '1d' | awk '{
+  for (i=1; i<=NF; i++) {
+    if ($i ~ /[a-z]+\.[a-z]+/) {
+      print $i
+      break
+    }
+  }
+}')
 
+# Second method: Simple extraction of the second column
+output2=$(flatpak list)
+IFS=$'\n' read -rd '' -a lines <<< "$output2"
+
+app_ids2=()
 for line in "${lines[@]}"; do
-  # Skip empty lines and the header
   if [[ -n "$line" && "$line" != *"Name"* ]]; then
-    # Extract the Application ID
     app_id=$(echo "$line" | awk '{print $2}')
-    if [[ -n "$app_id" ]]; then
-      app_ids+=("$app_id")
-    fi
+    app_ids2+=("$app_id")
   fi
 done
 
-# Print the Application IDs
-for app_id in "${app_ids[@]}"; do
+# Combine and remove duplicates
+combined_output=$(echo "$output1"$'\n'${app_ids2[@]})
+unique_app_ids=($(echo "$combined_output" | sort -u))
+
+# Print unique Application IDs
+for app_id in "${unique_app_ids[@]}"; do
   echo "$app_id"
 done
+
+read -p "Press Enter to continue..."
+

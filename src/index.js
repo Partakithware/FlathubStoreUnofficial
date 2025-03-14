@@ -63,9 +63,7 @@ function fetchInstalledFlatpaks(webContents) {
 
         webContents.send('flatpak-list-result', { success: true, flatpaks: flatpakList });
         modifyInstallButtons(webContents, flatpakList); // Call modifyInstallButtons here
-        setTimeout(() => {
-            fetchInstalledFlatpaks(webContents);//win.webContents.reload(); // Reload the page once
-           }, 3000); // 100ms delay (adjust as needed)
+        
     });
 }
 
@@ -85,10 +83,14 @@ function modifyInstallButtons(webContents, flatpakList) {
                     button.textContent = 'Install';
                     
                 }
+                    console.log('Flatpak List:', flatpakList); // Log the whole list
             });
         })(JSON.parse('${JSON.stringify(flatpakList)}'));
     `;
     webContents.executeJavaScript(jsCode);
+    setTimeout(() => {
+        fetchInstalledFlatpaks(webContents);//win.webContents.reload(); // Reload the page once
+       }, 5000); // 100ms delay (adjust as needed)
 }
 
 app.whenReady().then(() => {

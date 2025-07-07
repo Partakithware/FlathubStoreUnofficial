@@ -3,6 +3,8 @@ Install and Uninstall Flatpaks via Flathubs Install Button.
 I do not often if ever post my applications, so use at your own risk.
 Electron based Flathub store built into a .AppImage for you.
 
+[![Total Downloads](https://img.shields.io/github/downloads/Partakithware/FlathubStoreUnofficial/total.svg)](https://github.com/Partakithware/FlathubStoreUnofficial/releases)
+
 USE AT YOUR OWN RISK. I AM NOT TO BE HELD RESPONSIBLE FOR ANY DAMAGES THAT MAY OCCUR DUE TO THE USE OF THIS SOFTWARE. 
 (I imagine it should be fine of course but idk what you are installing... and if you install something bad somehow that's not on me.)
 

@@ -8,6 +8,8 @@ Electron based Flathub store built into a .AppImage for you.
 USE AT YOUR OWN RISK. I AM NOT TO BE HELD RESPONSIBLE FOR ANY DAMAGES THAT MAY OCCUR DUE TO THE USE OF THIS SOFTWARE. 
 (I imagine it should be fine of course but idk what you are installing... and if you install something bad somehow that's not on me.)
 
+Note- If you are having issues and it won't open run without sandbox.
+
 This will allow you to use the flathub store by-itself to install/uninstall flatpackrefs. 
 
 Update 1.0.2: Addresses what used to be listed here which was the fact that when you installed a Flatpak the install text did not change to uninstall, now it does. (experimental) temporary method was placed in that resolves this but not in the best way it could.
